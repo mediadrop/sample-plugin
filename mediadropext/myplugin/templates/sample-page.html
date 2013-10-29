@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:py="http://genshi.edgewall.org/"
+	xmlns:i18n="http://genshi.edgewall.org/i18n"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	i18n:domain="myplugin">
+<xi:include href="../master.html" />
+<head>
+	<link rel="stylesheet" type="text/css" href="${h.url_for('/myplugin/public/sample-style.css')}" />
+	<title>${_('Success')}</title>
+</head>
+
+<body>
+	<div class="mediacore-content sample-content clearfix">
+		<h1>Congratulations,</h1>
+		<div>you installed your first MediaDrop plugin!</div>
+
+		<div class="parameter">
+			<py:choose>
+				<py:when test="not value"
+					py:with="url = h.current_url(with_qs=False, qualified=True) + '?value=Hello World'">
+					Try this page with some dynamic content: <a href="${url}">${url}</a>
+				</py:when>
+				<py:otherwise>
+					Specified value is <span class="input-value">${value}</span>.
+				</py:otherwise>
+			</py:choose>
+		</div>
+
+		<div class="footer">
+			Sample code provided by <a href="http://mediadrop.net">MediaDrop</a> / <a href="http://www.schwarz.eu">Felix Schwarz</a>
+		</div>
+	</div>
+</body>
+</html>

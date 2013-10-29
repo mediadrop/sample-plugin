@@ -1,0 +1,6 @@
+recursive-include mediadropext/myplugin/public *
+recursive-include mediadropext/myplugin/templates *
+recursive-include mediadropext/myplugin/migrations *.mako
+#recursive-include mediadropext/myplugin/i18n *.pot
+#recursive-include mediadropext/myplugin/i18n *.po
+#recursive-include mediadropext/myplugin/i18n *.mo
