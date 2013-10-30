@@ -13,6 +13,7 @@ references to "myplugin" with a name of your own.
 Installation
 -----------------------------
 To install the plugin you need a working MediaDrop install (0.11dev from git).
+
 - activate your virtualenv (e.g. `source venv/bin/activate`)
 - extract the source code (e.g. `tar xzf SamplePlugin-1.0.tar.gz`)
 - run `python setup.py develop` for the sample plugin (e.g. `cd SamplePlugin-1.0; python setup.py develop`)
