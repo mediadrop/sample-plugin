@@ -4,11 +4,11 @@ Sample Plugin for MediaDrop
 This is a sample plugin (skeleton) for MediaDrop. It illustrates the basic
 structure of MediaDrop plugins without providing a lot of functionality.
 The plugin comes with a custom controller, one very simple template and some
-CSS.
+CSS. You can read more info about this plugin and plugin development in general
+in a blog post named [MediaDrop Plugin Basics](http://mediadrop.net/blog/2013/mediadrop-plugin-basics.html).
 
 If you use this package as a basis for your own experiments please replace the
 references to "myplugin" with a name of your own.
-
 
 Installation
 -----------------------------
@@ -21,8 +21,10 @@ To install the plugin you need a working MediaDrop install (0.11dev from git).
 - run paster (e.g. `paster serve deployment.ini`)
 
 If everything went ok you should be able to check out
-    http://localhost:8080/myplugin/sample
+    [http://localhost:8080/myplugin/sample](http://localhost:8080/myplugin/sample)
 and see the new controller in action.
+
+For more information on installation and debugging of plugins in general please read the [Operators Guide to MediaDrop plugins](http://mediadrop.net/blog/2013/operators-guide-to-mediacore-ce-plugins.html).
 
 
 Questions
