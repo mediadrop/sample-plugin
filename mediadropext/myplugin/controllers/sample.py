@@ -1,7 +1,7 @@
 # encoding: utf-8
 
-from mediacore.lib.base import BaseController
-from mediacore.lib.decorators import expose
+from mediadrop.lib.base import BaseController
+from mediadrop.lib.decorators import expose
 
 class SampleController(BaseController):
     @expose('myplugin/sample-page.html')

@@ -4,13 +4,13 @@ from setuptools import setup, find_packages
 
 setup(
     name='SamplePlugin',
-    version='1.0',
+    version='1.0.1',
 
     author='YOUR NAME',
     author_email='you@site.example',
     license='GPL v3 or later',
     install_requires = [
-        'MediaCore >= 0.11dev', # use whatever version you support
+        'MediaDrop >= 0.11dev', # use whatever version you support
     ],
 
     namespace_packages = ['mediadropext'],
@@ -26,7 +26,7 @@ setup(
     },
     packages=find_packages(),
     entry_points = {
-        'mediacore.plugin': [
+        'mediadrop.plugin': [
             'myplugin = mediadropext.myplugin.mediadrop_plugin',
         ],
     }
